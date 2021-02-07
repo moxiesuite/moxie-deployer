@@ -1,13 +1,13 @@
-var TestRPC = require("ganache-cli");
-var contract = require("truffle-contract");
+var GanacheCLI = require("@moxiesuite/ganache-cli/lib.js");
+var contract = require("moxie-contract");
 var Deployer = require("../index");
-var Web3 = require("web3");
+var Web3 = require("@vapory/web3");
 var assert = require("assert");
 
 var exec = require("../src/actions/exec");
 
 describe("deployer", function() {
-  var provider = TestRPC.provider();
+  var provider = GanacheCLI.provider();
   var web3 = new Web3(provider);
 
   // This is the solidity code for the example below:
@@ -35,7 +35,7 @@ describe("deployer", function() {
   });
 
   before("get accounts", function(done) {
-    web3.eth.getAccounts(function(err, accs) {
+    web3.vap.getAccounts(function(err, accs) {
       if (err) return done(err);
       accounts = accs;
       done();

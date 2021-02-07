@@ -1,18 +1,19 @@
 {
-  "name": "truffle-deployer",
+  "name": "moxie-deployer",
+  "namespace": "moxiesuite",
   "version": "2.0.5",
-  "description": "Light deployment module for easily deploying Ethereum contracts",
+  "description": "Light deployment module for easily deploying Vapory contracts",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trufflesuite/truffle-deployer.git"
+    "url": "git+https://github.com/moxiesuite/moxie-deployer.git"
   },
   "keywords": [
-    "ethereum",
-    "truffle",
+    "vapory",
+    "moxie",
     "solidity",
     "deployment",
     "contracts"
@@ -20,16 +21,17 @@
   "author": "Tim Coulter <tim.coulter@consensys.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/trufflesuite/truffle-deployer/issues"
+    "url": "https://github.com/moxiesuite/moxie-deployer/issues"
   },
-  "homepage": "https://github.com/trufflesuite/truffle-deployer#readme",
+  "homepage": "https://github.com/moxiesuite/moxie-deployer#readme",
   "dependencies": {
-    "truffle-contract": "^3.0.5",
-    "truffle-expect": "^0.0.3"
+    "moxie-contract": "3.0.5",
+    "moxie-expect": "0.0.3"
   },
   "devDependencies": {
-    "ganache-cli": "6.0.3",
+    "@moxiesuite/ganache-core": "2.0.2",
+    "@moxiesuite/ganache-cli": "6.0.3",
     "mocha": "^3.2.0",
-    "web3": "^0.20.1"
+    "@vapory/web3": "0.20.4-b"
   }
 }

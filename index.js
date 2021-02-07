@@ -1,4 +1,4 @@
-var expect = require("truffle-expect");
+var expect = require("moxie-expect");
 var DeferredChain = require("./src/deferredchain");
 var deploy = require("./src/actions/deploy");
 var deployMany = require("./src/actions/deploymany");
@@ -57,7 +57,7 @@ Deployer.prototype.new = function() {
 };
 
 Deployer.prototype.exec = function(file) {
-  throw new Error("deployer.exec() has been deprecated; please seen the truffle-require package for integration.")
+  throw new Error("deployer.exec() has been deprecated; please seen the moxie-require package for integration.")
 };
 
 Deployer.prototype.then = function(fn) {
